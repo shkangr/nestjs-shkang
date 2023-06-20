@@ -1,0 +1,10 @@
+{
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/src",
+  "monorepo": true,
+  "compilerOptions": {
+    "webpack": true,
+    "deleteOutDir": true,
+    "plugins": ["@nestjs/swagger"]
+  }
+}

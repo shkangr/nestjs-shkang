@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  db:
+    container_name: planet_shkang
+    image: mysql:8.0
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 12345
+      MYSQL_USER: shkang_user
+      MYSQL_PASSWORD: test1234!!
+      MYSQL_DATABASE: planet
+    ports:
+      - "3307:3306"
+    networks:
+      default:
