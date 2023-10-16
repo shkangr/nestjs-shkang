@@ -13,4 +13,13 @@ export class AppController {
   getHello() {
     return this.appService.getHello()
   }
+
+  @Get('/test')
+  @HttpCode(HttpStatus.OK)
+  @Header('Content-Type', 'application/json')
+  getTest() {
+    return {
+        message: 'test',
+    }
+  }
 }
